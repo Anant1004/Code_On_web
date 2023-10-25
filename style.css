@@ -264,9 +264,9 @@ button:hover {
 
 .type-of-web{
     margin-left: 50px;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     width: 20%;
-    text-align: center;
+    /* text-align: center; */
 
 }
 .type-of-web h2{
