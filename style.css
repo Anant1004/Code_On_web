@@ -9,6 +9,7 @@
 }
 
 body {
+    width: 100%;
     background: linear-gradient(to right, #2b2923 0%, black 100%);
 }
 /* header started here */
@@ -55,6 +56,11 @@ body {
     width: 600px;
     height: 50px;
 }
+.menubar i{
+    display: none;
+    font-size: 2.4rem;
+    color:#fff;
+}
 
 .navbar ul {
     width: 100%;
@@ -96,6 +102,33 @@ hr {
     margin-left: 69%;
 }
 
+
+
+@media  screen and (max-width:888px) {
+    .nav-index{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-logo span i {
+        font-size: 1.8rem;
+    }
+    .nav-logo h1 a {
+        font-weight: 1.8rem;
+    }
+    .navbar{
+        display: none;
+    }
+ .menubar i{
+    cursor: pointer;
+
+        font-size: 1.8rem;
+        display: block;
+        flex-flow: right;
+
+    }
+}
+
 /* main navbar section end */
 /* header section is end  */
 /* first pannel started */
@@ -114,7 +147,7 @@ hr {
 .first-pannel .text-area {
     padding: 30px 20px;
     height: 50vh;
-    width: 50vw;
+    width: 60vw;
 }
 
 .first-pannel .text-area h1 {
@@ -164,6 +197,48 @@ button:hover {
     border-radius: 60px;
 }
 
+@media  screen and (max-width:888px){
+    .first-pannel {
+        padding: 10px;
+        height: 50vh;
+
+    }
+    .first-pannel .text-area{
+        padding:10px 8px;
+        height: 40vh;
+        width:40vw;
+    }
+    .first-pannel .text-area h1{
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 8px 8px 3px 30px;
+    }
+    .first-pannel .text-area h2{
+        font-size: 0.8rem;
+        padding-left: 30px;
+    }
+    .first-pannel .text-area p{
+        font-size: 0.rem;
+        max-width: 60vw;
+        padding:8px 8px 0px 30px ;
+    }
+    button{
+        padding: 6px ;
+        margin:12px 0px 0px 30px ;
+        font-size: 1rem;
+
+    }
+    button:hover {
+        font-size: 1.1rem;
+    }
+    .image img{
+        height: 40vh;
+        width:40vw;
+
+    }
+}
+
+
 /* second pannel started */
 
 .main-first-section {
@@ -196,7 +271,7 @@ button:hover {
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-left: 10px;
     color: #fff;
     max-width: 90%;
@@ -230,6 +305,21 @@ button:hover {
 
 .course-btn a:hover {
     color: #ffff;
+}
+@media  screen and (max-width:888px){
+    .question-section{
+        padding:5px;
+    }
+    .question-section h1{
+        font-size: 1.2rem;
+        /* padding-top: 5px; */
+    }
+    .question-section p{
+        font-size:0.8rem;
+    }
+
+
+    
 }
 
 /* third pannel started */
@@ -274,6 +364,49 @@ button:hover {
 }
 
 
+
+
+@media  screen and (max-width:888px){
+    .main-first-section {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+.hero {
+    height: 40vh;
+    margin: 50px;
+    width: 27%;
+    padding:10px 2px 0px 10px ;
+}
+}
+
+.hero h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    width: 55%;
+}
+.hero p {
+    /* font-size: .88rem; */
+    padding-left: 5px;
+    color: #fff;
+    max-width: 95%;
+    padding-top: 10px;
+}
+.course-btn {
+    margin-left: 25%;
+    margin-top: 4%;
+    height: 25px;
+    width:90px;
+}
+.course-btn a {
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
 
 /* footer section is started here  */
 
